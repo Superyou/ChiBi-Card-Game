@@ -15,6 +15,6 @@ MonoBehaviour:
   name: Xiahou Dun
   description: General With One Eye
   artwork: {fileID: 21300000, guid: 5821839a13a886d44b9c92a56d26f669, type: 3}
-  manaCost: 8
-  attack: 8
-  health: 8
+  manaCost: 7
+  attack: 7
+  health: 7
