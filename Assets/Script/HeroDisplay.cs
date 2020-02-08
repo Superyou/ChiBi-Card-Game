@@ -13,6 +13,7 @@ public class HeroDisplay : MonoBehaviour
     public Image artworkImage;
 
     public Text healthText;
+    private int hp;
 
     // Use this for initialization
     void Start()
@@ -21,6 +22,28 @@ public class HeroDisplay : MonoBehaviour
         
         artworkImage.sprite = hero.artwork;
         healthText.text = hero.health.ToString();
+        hp = hero.health;
     }
+
+    public void TakeDamage(int damage)
+    {
+        hp-=damage;
+        healthText.text = hp.ToString();
+        if(hp < 0)
+        {
+            //END GAME
+        }
+    }
+    public void healHP(int num)
+    {
+        hp += num;
+        if(hp>=30)
+        {
+            hp = 30;
+        }
+
+        healthText.text = hp.ToString();
+    }
+
 
 }

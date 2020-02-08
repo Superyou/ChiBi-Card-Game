@@ -10,11 +10,12 @@ public class Hero : ScriptableObject
     
     public Sprite artwork;
 
-    public int health;
+    public int health = 30;
 
     public void Print()
     {
         Debug.Log(name + ": "+ health);
     }
+
 
 }

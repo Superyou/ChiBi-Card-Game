@@ -9,8 +9,8 @@ public class Menu : MonoBehaviour
 	// New Game Button
 	public void PlayGame()
 	{
-		SceneManager.LoadScene (1);	
-}    
+		SceneManager.LoadScene ("Map");	
+    }    
 
 	//Quit Button
 	public void QuitGame(){

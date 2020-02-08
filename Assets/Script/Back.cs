@@ -8,13 +8,8 @@ public class Back : MonoBehaviour
     
     public void backToMenu()
     {
-        SceneManager.LoadScene (0);	
+        SceneManager.LoadScene("Menu");	
 
     }
 
-    
-    void Update()
-    {
-        
-    }
 }
