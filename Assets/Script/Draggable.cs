@@ -11,6 +11,11 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     public enum CardType { HERO, MINION, SPELL, WEAPON }
     public CardType typeOfCard = CardType.MINION;
 
+
+    
+
+
+
     public void OnBeginDrag(PointerEventData eventData)
     {
         //Debug.Log("BeginDrag!");

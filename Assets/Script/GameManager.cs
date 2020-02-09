@@ -14,34 +14,54 @@ public class GameManager : MonoBehaviour
 
     public float cycletime = 60f;
     public float timer = 0;
+    public HandCard handcard;
+
 
     private TextMeshProUGUI clock;
+
+
+    private string currentHero = "hero1";
+
+    public CardGenerator cardgenerator;
+
+    
 
     void Awake()
     {
         clock = this.transform.Find("clock").GetComponent<TextMeshProUGUI>();
+
+        // Give Cards to Both Heros
+        StartCoroutine( GenerateCardForPlayer());
+
+    }
+
+    private IEnumerator GenerateCardForPlayer()
+    {
+        //Debug.Log("perfect now");
+
+        GameObject Cardgo = cardgenerator.RandomGetCard();
+        yield return new WaitForSeconds(2.1f);
+        handcard.GetCard(Cardgo);
+
+        Cardgo = cardgenerator.RandomGetCard();
+        yield return new WaitForSeconds(2.1f);
+        handcard.GetCard(Cardgo);
+
+        Cardgo = cardgenerator.RandomGetCard();
+        yield return new WaitForSeconds(2.1f);
+        handcard.GetCard(Cardgo);
+
+        Cardgo = cardgenerator.RandomGetCard();
+        yield return new WaitForSeconds(2.1f);
+        handcard.GetCard(Cardgo);
     }
     void Update()
     {
-        
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.T))
         {
-            RandomGetCard();
+            StartCoroutine(GenerateCardForPlayer());
         }
-        if (isTransforming)
-        {
-            timer += Time.deltaTime;
-            int index =(int)(timer / (1f / transformSpeed));
-            index %= cardsLab.Length;
-            //currentCard.SetCard(cardsLab[index]);
 
-
-            if (timer > transformTime)
-            {
-                timer = 0;
-                isTransforming = false;
-            }
-        }
         if (gamestate == GameState.Playcard)
         {
             clock.gameObject.SetActive(true);
@@ -63,27 +83,7 @@ public class GameManager : MonoBehaviour
 
     }
 
-    public GameObject cardPrefab;
-    public Transform fromcard;
-    public Transform tocard;
-    public Card[] cardsLab;
-
-    //private CardDisplay currentCard;
-
-    //private float timer;
-    public float transformTime = 2f;
-    public int transformSpeed = 20;
-
-    private bool isTransforming = false;
-
-    public void RandomGetCard()
-    {
-        isTransforming = true;
-        GameObject go = NGUITools.AddChild(this.gameObject, cardPrefab);
-        go.transform.position = fromcard.position;
-        //currentCard = go.GetComponent<CardDisplay>();
-        iTween.MoveTo(go, tocard.position, 1f);
-    }
+    
     
 
 }

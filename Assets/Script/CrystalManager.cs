@@ -9,18 +9,31 @@ public class CrystalManager : MonoBehaviour
     public int CurrentCrystal = 1;
 
     public TextMeshProUGUI[] crystals;
-    private int totalnumber;
+    public int maxnumber = 10;
     private TextMeshProUGUI my_text;
 
     private void Awake()
     {
-        totalnumber = crystals.Length;
+        maxnumber = crystals.Length;
         my_text = GetComponent<TextMeshProUGUI>();
     }
-    // Start is called before the first frame update
-    void Start()
+    public void RefreshNum()
     {
+        if (TotalCrystal < maxnumber)
+        {
+            TotalCrystal++;
+        }
+        CurrentCrystal = TotalCrystal;
+    }
 
+    public bool CostCrystal(int num)
+    {
+        if (CurrentCrystal >= num)
+        {
+            CurrentCrystal -= num;
+            return true;
+        }
+        return false;
     }
 
     // Update is called once per frame
@@ -31,7 +44,7 @@ public class CrystalManager : MonoBehaviour
             crystals[i].gameObject.SetActive(true);
         }
 
-        for (int i = TotalCrystal; i < totalnumber; i++)
+        for (int i = TotalCrystal; i < maxnumber; i++)
         {
             crystals[i].gameObject.SetActive(false);
         }

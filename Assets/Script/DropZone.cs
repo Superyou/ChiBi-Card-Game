@@ -15,9 +15,38 @@ public class DropZone : MonoBehaviour, IDropHandler
 
         Draggable d = eventData.pointerDrag.GetComponent<Draggable>(); //d is the object being dragged
 
+        CardDisplay card = d.GetComponent<CardDisplay>();
+
+        // Enough mana to cost
         if (d != null && typeOfCard == d.typeOfCard )
         {
-            d.parentToReturnTo = this.transform;
+
+            int needCrystal = card.card.manaCost;
+            CrystalManager playercrystal = GameObject.Find("YourCrystal").GetComponent<CrystalManager>();
+
+            Debug.Log(eventData.pointerDrag.name);
+
+
+            //Current Problematic!
+            if (this.transform == GameObject.Find("YourDeck") && card.GetComponentInParent<GameObject>() == GameObject.Find("Hand"))
+            {
+
+                if (playercrystal.CostCrystal(needCrystal))
+                {
+                    Debug.Log("mana cost and moved to deck");
+                    d.parentToReturnTo = this.transform;
+                }
+                else
+                {
+                    Debug.Log("No enough mana");
+                }
+            }
+            else
+            {
+                Debug.Log("Not legal area");
+            }
+
+            //cost coresspnding mana
         }
     }
 }

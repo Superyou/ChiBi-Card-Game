@@ -40,4 +40,26 @@ public class CardDisplay : MonoBehaviour {
         healthText.text = card.health.ToString();
     }
 
+
+    //This part should only appear for the cards in yourHand,YourDeck,EnermyDeck
+
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit))
+            {
+                if(hit.collider.gameObject.name == this.gameObject.name)
+                {
+                    Debug.Log("I am pressed");
+                    CardDescript._instance.ShowCard(card);
+                }
+            }
+        }
+    }
+
+    
+
 }
