@@ -4,83 +4,179 @@ using UnityEngine;
 using TMPro;
 public enum GameState
 {
-    GameStarting, 
+    GameStarting,
+    GetingCards,
     Playcard,
+    Pause,
     End
 }
 public class GameManager : MonoBehaviour
 {
+    public static GameManager _instance;
+
     public GameState gamestate = GameState.GameStarting;
 
     public float cycletime = 60f;
     public float timer = 0;
     public HandCard handcard;
-
+    public EnermyHand enermycard;
 
     private TextMeshProUGUI clock;
 
 
-    private string currentHero = "hero1";
+    private string currentHero = "Player";
 
     public CardGenerator cardgenerator;
 
-    
+
+    public int TurnIndex = 0;
+    //on switch turns
+    public delegate void NewTurnEvent(string heroname);
+    public event NewTurnEvent OnNewTurn;
 
     void Awake()
     {
+        _instance = this;
         clock = this.transform.Find("clock").GetComponent<TextMeshProUGUI>();
-
+        clock.gameObject.SetActive(false);
         // Give Cards to Both Heros
-        StartCoroutine( GenerateCardForPlayer());
+        StartCoroutine( GenerateCardForPlayers());
 
     }
 
-    private IEnumerator GenerateCardForPlayer()
+    private IEnumerator GenerateCardForPlayers()
     {
         //Debug.Log("perfect now");
 
-        GameObject Cardgo = cardgenerator.RandomGetCard();
+        GameObject Cardgo = cardgenerator.RandomGetCard("Player");
         yield return new WaitForSeconds(2.1f);
         handcard.GetCard(Cardgo);
 
-        Cardgo = cardgenerator.RandomGetCard();
+        Cardgo = cardgenerator.RandomGetCard("Player");
         yield return new WaitForSeconds(2.1f);
         handcard.GetCard(Cardgo);
 
-        Cardgo = cardgenerator.RandomGetCard();
+        Cardgo = cardgenerator.RandomGetCard("Player");
         yield return new WaitForSeconds(2.1f);
         handcard.GetCard(Cardgo);
 
-        Cardgo = cardgenerator.RandomGetCard();
+        Cardgo = cardgenerator.RandomGetCard("Player");
         yield return new WaitForSeconds(2.1f);
         handcard.GetCard(Cardgo);
+
+        //Give card to enermy
+        Cardgo = cardgenerator.RandomGetCard("Enermy");
+        yield return new WaitForSeconds(2.1f);
+        enermycard.GetCard(Cardgo);
+
+        Cardgo = cardgenerator.RandomGetCard("Enermy");
+        yield return new WaitForSeconds(2.1f);
+        enermycard.GetCard(Cardgo);
+
+        Cardgo = cardgenerator.RandomGetCard("Enermy");
+        yield return new WaitForSeconds(2.1f);
+        enermycard.GetCard(Cardgo);
+
+        Cardgo = cardgenerator.RandomGetCard("Enermy");
+        yield return new WaitForSeconds(2.1f);
+        enermycard.GetCard(Cardgo);
+
+        gamestate = GameState.GetingCards;
+        timer = 0;
     }
+
     void Update()
     {
+        /*
         if (Input.GetKeyDown(KeyCode.T))
         {
-            StartCoroutine(GenerateCardForPlayer());
+            StartCoroutine(GenerateCardForPlayers());
         }
-
-        if (gamestate == GameState.Playcard)
+        */
+        if(gamestate == GameState.GetingCards)
         {
-            clock.gameObject.SetActive(true);
-            int tmp = (int)(60 - timer);
-            clock.text = tmp.ToString();
-
-            timer += Time.deltaTime;
-            if(timer > cycletime)
+            StartCoroutine(GetTwoCards());
+            gamestate = GameState.Pause;
+        }
+        else if (gamestate == GameState.Playcard)
+        {
+            if (currentHero == "Player")
             {
-                TransformPlayer();
+                clock.gameObject.SetActive(true);
+                int tmp = (int)(60 - timer);
+                clock.text = tmp.ToString();
+
+                timer += Time.deltaTime;
+                if (timer > cycletime)
+                {
+                    TransformPlayer();
+                }
+            }
+            else
+            {
+                timer += Time.deltaTime;
+
+                if (timer > 2f)
+                {
+                    TransformPlayer();
+                }
             }
         }
         
         
     }
 
-    private void TransformPlayer()
-    {
 
+    //Switch Player and getcards
+    public void TransformPlayer()
+    {
+        gamestate = GameState.Pause;
+        timer = 0;
+        if (currentHero == "Player")
+        {
+            currentHero = "Enermy";
+        }
+        else
+        {
+            currentHero = "Player";
+        }
+        TurnIndex++; 
+        OnNewTurn(currentHero);
+
+        //Give 2 new cards
+
+        //if (TurnIndex >= 2)
+        //{
+        StartCoroutine(GetTwoCards());
+        
+        //}
+
+    }
+
+    private IEnumerator GetTwoCards()
+    {
+        //gamestate = GameState.GetingCards;
+        if(currentHero == "Player")
+        {
+            GameObject Cardgo = cardgenerator.RandomGetCard(currentHero);
+            yield return new WaitForSeconds(2.1f);
+            handcard.GetCard(Cardgo);
+
+            Cardgo = cardgenerator.RandomGetCard(currentHero);
+            yield return new WaitForSeconds(2.1f);
+            handcard.GetCard(Cardgo);
+        }
+        else
+        {
+            GameObject Cardgo = cardgenerator.RandomGetCard(currentHero);
+            yield return new WaitForSeconds(2.1f);
+            enermycard.GetCard(Cardgo);
+
+            Cardgo = cardgenerator.RandomGetCard(currentHero);
+            yield return new WaitForSeconds(2.1f);
+            enermycard.GetCard(Cardgo);
+        }
+        gamestate = GameState.Playcard;
     }
 
     

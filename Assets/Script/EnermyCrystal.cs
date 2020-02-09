@@ -38,4 +38,20 @@ public class EnermyCrystal : MonoBehaviour
     {
         my_text.text = CurrentCrystal + "/" + TotalCrystal;
     }
+
+
+    public void OnNewTurn(string heroName)
+    {
+        if(heroName == "Enermy")
+        {
+            if (GameManager._instance.TurnIndex >= 2)
+            {
+                RefreshNum();
+            }
+        }
+    }
+    private void Start()
+    {
+        GameManager._instance.OnNewTurn += this.OnNewTurn;
+    }
 }

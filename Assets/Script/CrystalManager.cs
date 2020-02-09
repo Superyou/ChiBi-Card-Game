@@ -66,5 +66,16 @@ public class CrystalManager : MonoBehaviour
 
     }
 
+    public void OnNewTurn(string heroName)
+    {
+        if(heroName == "Player")
+        {
+            RefreshNum();
+        }
+    }
+    private void Start()
+    {
+        GameManager._instance.OnNewTurn += this.OnNewTurn;
+    }
 
 }

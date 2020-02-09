@@ -10,6 +10,7 @@ public class CardGenerator : MonoBehaviour
     public Transform fromcard;
     public Transform tocard;
     public Transform targetcard;
+    public Transform target2card;
 
     //All the cards we are going to use in the game
     public Card[] cardsLab;
@@ -28,7 +29,7 @@ public class CardGenerator : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            RandomGetCard();
+            RandomGetCard("Player");
         }
         if (isTransforming)
         {
@@ -46,7 +47,7 @@ public class CardGenerator : MonoBehaviour
     }
 
 
-    public GameObject RandomGetCard()
+    public GameObject RandomGetCard(string heroname)
     {
         Debug.Log("Start random GO");
 
@@ -56,15 +57,22 @@ public class CardGenerator : MonoBehaviour
         currentCard = go.GetComponent<CardDisplay>();
         currentCard.SetCard(cardsLab[Random.Range(0, cardsLab.Length)]);
         //iTween.MoveTo(go, tocard.position, 3f);
-        
-        StartCoroutine(FurtherMove(go));
+
+        if (heroname == "Player")
+        {
+            StartCoroutine(MovetoPlayer(go));
+        }
+        else
+        {
+            StartCoroutine(MovetoEnermy(go));
+        }
         //isTransforming = true;
         //Debug.Log("created random GO");
 
         return go;
     }
 
-    private IEnumerator FurtherMove(GameObject x)
+    private IEnumerator MovetoPlayer(GameObject x)
     {
         iTween.MoveTo(x, tocard.position, 2f);
         yield return new WaitForSeconds(1f);
@@ -72,6 +80,16 @@ public class CardGenerator : MonoBehaviour
         iTween.ScaleTo(x,new Vector3(0.37f,0.37f,0.37f), 1f);
         
     }
+
+    private IEnumerator MovetoEnermy(GameObject x)
+    {
+        iTween.MoveTo(x, tocard.position, 2f);
+        yield return new WaitForSeconds(1f);
+        iTween.MoveTo(x, target2card.position, 1f);
+        iTween.ScaleTo(x, new Vector3(0.37f, 0.37f, 0.37f), 1f);
+
+    }
+
 
 
 }

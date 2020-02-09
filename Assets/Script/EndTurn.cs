@@ -18,6 +18,27 @@ public class EndTurn : MonoBehaviour
 
     public void OnEndTurnClick()
     {
-        my_text.text = "Enermy Turn";
+        if (my_text.text == "End Turn")
+        {
+            my_text.text = "Enermy Turn";
+            GameManager._instance.TransformPlayer();
+
+        }
+        
     }
+
+    public void OnNewTurn(string heroName)
+    {
+        if(heroName == "Player")
+        {
+            my_text.text = "End Turn";
+        }
+    }
+
+    private void Start()
+    {
+        GameManager._instance.OnNewTurn += this.OnNewTurn;
+    }
+
+
 }

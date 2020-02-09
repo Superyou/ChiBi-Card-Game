@@ -216,6 +216,7 @@
     <Compile Include="Assets\Script\DropZone.cs" />
     <Compile Include="Assets\Script\EndTurn.cs" />
     <Compile Include="Assets\Script\EnermyCrystal.cs" />
+    <Compile Include="Assets\Script\EnermyHand.cs" />
     <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\Script\HandCard.cs" />
     <Compile Include="Assets\Script\Hero.cs" />
