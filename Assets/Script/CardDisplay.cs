@@ -28,15 +28,16 @@ public class CardDisplay : MonoBehaviour {
 		healthText.text = card.health.ToString();
 	}
 	
-    public void SetCard(Card card)
+    public void SetCard(Card newcard)
     {
-        nameText.text = card.name;
-        descriptionText.text = card.description;
+        card = newcard;
+        nameText.text = newcard.name;
+        descriptionText.text = newcard.description;
 
-        artworkImage.sprite = card.artwork;
+        artworkImage.sprite = newcard.artwork;
 
-        manaText.text = card.manaCost.ToString();
-        attackText.text = card.attack.ToString();
+        manaText.text = newcard.manaCost.ToString();
+        attackText.text = newcard.attack.ToString();
         healthText.text = card.health.ToString();
     }
 

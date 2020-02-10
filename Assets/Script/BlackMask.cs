@@ -5,10 +5,12 @@ using UnityEngine;
 public class BlackMask : MonoBehaviour
 {
     public static BlackMask _instance;
+    public bool startgame = false;
     void Awake()
     {
         _instance = this;
         this.gameObject.SetActive(true);
+        startgame = false;
     }
     
 
@@ -16,6 +18,7 @@ public class BlackMask : MonoBehaviour
     {
         yield return new WaitForSeconds(3f);
         this.gameObject.SetActive(false);
+        startgame = true;
     }
 
     void Start()

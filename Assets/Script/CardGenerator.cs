@@ -55,7 +55,9 @@ public class CardGenerator : MonoBehaviour
         go.transform.position = fromcard.position;
         go.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
         currentCard = go.GetComponent<CardDisplay>();
-        currentCard.SetCard(cardsLab[Random.Range(0, cardsLab.Length)]);
+        int rand = Random.Range(0, cardsLab.Length);
+        Debug.Log(rand);
+        currentCard.SetCard(cardsLab[rand]);
         //iTween.MoveTo(go, tocard.position, 3f);
 
         if (heroname == "Player")

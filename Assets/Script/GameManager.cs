@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
         clock = this.transform.Find("clock").GetComponent<TextMeshProUGUI>();
         clock.gameObject.SetActive(false);
         // Give Cards to Both Heros
-        StartCoroutine( GenerateCardForPlayers());
+        
 
     }
 
@@ -87,12 +87,20 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        if(BlackMask._instance.startgame == true)
+        {
+            StartCoroutine(GenerateCardForPlayers());
+            BlackMask._instance.startgame = false;
+        }
         /*
         if (Input.GetKeyDown(KeyCode.T))
         {
             StartCoroutine(GenerateCardForPlayers());
         }
         */
+
+        
+
         if(gamestate == GameState.GetingCards)
         {
             StartCoroutine(GetTwoCards());
@@ -134,11 +142,14 @@ public class GameManager : MonoBehaviour
         timer = 0;
         if (currentHero == "Player")
         {
+            clock.gameObject.SetActive(false);
             currentHero = "Enermy";
         }
         else
         {
             currentHero = "Player";
+            
+
         }
         TurnIndex++; 
         OnNewTurn(currentHero);
@@ -177,6 +188,8 @@ public class GameManager : MonoBehaviour
             enermycard.GetCard(Cardgo);
         }
         gamestate = GameState.Playcard;
+        timer = 0;
+        clock.gameObject.SetActive(true);
     }
 
     
