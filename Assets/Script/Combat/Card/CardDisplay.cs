@@ -27,7 +27,9 @@ public class CardDisplay : MonoBehaviour {
 		attackText.text = card.attack.ToString();
 		healthText.text = card.health.ToString();
 	}
-	
+
+
+	// the public method for other gameobject to change this card display
     public void SetCard(Card newcard)
     {
         card = newcard;
@@ -42,8 +44,13 @@ public class CardDisplay : MonoBehaviour {
     }
 
 
+
+
+
+    //When mouse click on any card in your hand, the description card should become visible and show on the screen
     //This part should only appear for the cards in yourHand,YourDeck,EnermyDeck
 
+    // Currently Not Working
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
