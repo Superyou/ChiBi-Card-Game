@@ -8,49 +8,58 @@ public class CardDisplay : MonoBehaviour {
 	public Card card;
 
 	public Text nameText;
+    public Text cpnameText;
 	public Text descriptionText;
 
 	public Image artworkImage;
+    public Image cpartworkImage;
 
+    public Text cpmanaText;
 	public Text manaText;
 	public Text attackText;
+    public Text cpattackText;
 	public Text healthText;
+    public Text cphealthText;
+    public Text detailText;
 
 	// Use this for initialization
 	void Start () {
 		nameText.text = card.name;
+        cpnameText.text = card.name;
 		descriptionText.text = card.description;
 
 		artworkImage.sprite = card.artwork;
+        cpartworkImage.sprite = card.artwork;
 
 		manaText.text = card.manaCost.ToString();
+        cpmanaText.text = card.manaCost.ToString();
 		attackText.text = card.attack.ToString();
+        cpattackText.text = card.attack.ToString();
 		healthText.text = card.health.ToString();
+        cphealthText.text = card.health.ToString();
+        detailText.text = card.detail;
 	}
-
-
-	// the public method for other gameobject to change this card display
+	
     public void SetCard(Card newcard)
     {
         card = newcard;
         nameText.text = newcard.name;
+        cpnameText.text = newcard.name;
         descriptionText.text = newcard.description;
-
+        cpartworkImage.sprite = newcard.artwork;
         artworkImage.sprite = newcard.artwork;
-
+        cpmanaText.text = newcard.manaCost.ToString();
         manaText.text = newcard.manaCost.ToString();
         attackText.text = newcard.attack.ToString();
-        healthText.text = card.health.ToString();
+        cpattackText.text = newcard.attack.ToString();
+        healthText.text = newcard.health.ToString();
+        cphealthText.text = newcard.health.ToString();
+        detailText.text = newcard.detail;
     }
 
 
-
-
-
-    //When mouse click on any card in your hand, the description card should become visible and show on the screen
     //This part should only appear for the cards in yourHand,YourDeck,EnermyDeck
 
-    // Currently Not Working
     void Update()
     {
         if (Input.GetMouseButtonDown(0))

@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Card", menuName = "Card")]
-
-// The class to define a card template, the card class will be used for CardDisplay class to show on the screen
 public class Card : ScriptableObject {
 
 	public new string name;
 	public string description;
+    public string detail;
 
 	public Sprite artwork;
 

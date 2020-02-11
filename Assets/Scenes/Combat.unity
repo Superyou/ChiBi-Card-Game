@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2458,7 +2458,7 @@ Transform:
   m_GameObject: {fileID: 552223943}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.0056338026, y: 0.0056338026, z: 0.0056338026}
+  m_LocalScale: {x: 0.003164557, y: 0.003164557, z: 0.003164557}
   m_Children:
   - {fileID: 4162873}
   - {fileID: 791993843}
@@ -2551,11 +2551,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   card: {fileID: 11400000, guid: 75541c9f1ce29a1418c7e4fc6b301cbe, type: 2}
   nameText: {fileID: 1962570670}
+  cpnameText: {fileID: 0}
   descriptionText: {fileID: 1378843747}
   artworkImage: {fileID: 4668366}
+  cpartworkImage: {fileID: 0}
+  cpmanaText: {fileID: 0}
   manaText: {fileID: 406793159}
   attackText: {fileID: 1623619000}
+  cpattackText: {fileID: 0}
   healthText: {fileID: 430324725}
+  cphealthText: {fileID: 0}
+  detailText: {fileID: 0}
 --- !u!222 &554405584
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2743,11 +2749,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   card: {fileID: 11400000, guid: 75541c9f1ce29a1418c7e4fc6b301cbe, type: 2}
   nameText: {fileID: 190209973}
+  cpnameText: {fileID: 0}
   descriptionText: {fileID: 1698869308}
   artworkImage: {fileID: 1645563926}
+  cpartworkImage: {fileID: 0}
+  cpmanaText: {fileID: 0}
   manaText: {fileID: 1047502296}
   attackText: {fileID: 1525440182}
+  cpattackText: {fileID: 0}
   healthText: {fileID: 627568755}
+  cphealthText: {fileID: 0}
+  detailText: {fileID: 0}
 --- !u!222 &635232971
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4789,11 +4801,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   card: {fileID: 11400000, guid: 75541c9f1ce29a1418c7e4fc6b301cbe, type: 2}
   nameText: {fileID: 953619964}
+  cpnameText: {fileID: 0}
   descriptionText: {fileID: 419874535}
   artworkImage: {fileID: 1496757690}
+  cpartworkImage: {fileID: 0}
+  cpmanaText: {fileID: 0}
   manaText: {fileID: 548743686}
   attackText: {fileID: 1730680154}
+  cpattackText: {fileID: 0}
   healthText: {fileID: 528613645}
+  cphealthText: {fileID: 0}
+  detailText: {fileID: 0}
 --- !u!222 &1163732367
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6830,7 +6848,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5006f7de4967e48ab9d1abbc89b453f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardPrefab: {fileID: 3943819136861257214, guid: 6ef620a484ba8844c9ac989be208ff3f,
+  cardPrefab: {fileID: 3943819136861257214, guid: d9fa4733dd90769458c30a9bac4a6dae,
     type: 3}
   fromcard: {fileID: 1163732363}
   tocard: {fileID: 554405580}
@@ -6839,6 +6857,7 @@ MonoBehaviour:
   cardsLab:
   - {fileID: 11400000, guid: 3fb2c22132a4be34199112735d8672cc, type: 2}
   - {fileID: 11400000, guid: 75541c9f1ce29a1418c7e4fc6b301cbe, type: 2}
+  myDeck: {fileID: 11400000, guid: 66693151b1d92234fbccc029352b64fc, type: 2}
   transformTime: 2
   transformSpeed: 20
 --- !u!1 &1698869306
@@ -8795,11 +8814,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   card: {fileID: 11400000, guid: 75541c9f1ce29a1418c7e4fc6b301cbe, type: 2}
   nameText: {fileID: 2015976606}
+  cpnameText: {fileID: 0}
   descriptionText: {fileID: 126408975}
   artworkImage: {fileID: 2015829125}
+  cpartworkImage: {fileID: 0}
+  cpmanaText: {fileID: 0}
   manaText: {fileID: 2064931042}
   attackText: {fileID: 226878571}
+  cpattackText: {fileID: 0}
   healthText: {fileID: 1602632014}
+  cphealthText: {fileID: 0}
+  detailText: {fileID: 0}
 --- !u!222 &2129376103
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9137,11 +9162,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   card: {fileID: 11400000, guid: 75541c9f1ce29a1418c7e4fc6b301cbe, type: 2}
   nameText: {fileID: 7984851823231278349}
+  cpnameText: {fileID: 0}
   descriptionText: {fileID: 7984851822683669014}
   artworkImage: {fileID: 7984851821686010937}
+  cpartworkImage: {fileID: 0}
+  cpmanaText: {fileID: 0}
   manaText: {fileID: 7984851823221420645}
   attackText: {fileID: 7984851823219012823}
+  cpattackText: {fileID: 0}
   healthText: {fileID: 7984851823274463279}
+  cphealthText: {fileID: 0}
+  detailText: {fileID: 0}
 --- !u!222 &7984851823142824416
 CanvasRenderer:
   m_ObjectHideFlags: 0
