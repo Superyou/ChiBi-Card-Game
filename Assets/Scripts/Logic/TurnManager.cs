@@ -56,7 +56,7 @@ public class TurnManager : MonoBehaviour {
 
     void Start()
     {
-        OnGameStart();
+        // TODO OnGameStart();
     }
 
     public void OnGameStart()
@@ -113,7 +113,12 @@ public class TurnManager : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Space))
             EndTurn();
     }
-
+    //for Test ONLY
+    public void EndTurnTest()
+    {
+        timer.StopTimer();
+        timer.StartTimer();
+    }
     public void EndTurn()
     {
         // stop timer
