@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{15DBFC10-80E0-229D-70A4-72FE9476B524}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Visual/PlayerArea.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Logic/TurnManager.cs" Line="65" Column="1" />
+      <File FileName="Assets/Scripts/Visual/PlayerArea.cs" Line="20" Column="6" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b1612a8f-d700-4752-8bf3-16ec50d0e4cf" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

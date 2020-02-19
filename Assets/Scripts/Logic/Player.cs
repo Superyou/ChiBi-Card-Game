@@ -142,6 +142,12 @@ public class Player : MonoBehaviour, ICharacter
         ManaLeft += amount;
     }
 
+    //For testing only, diable in complete game
+    void Update() {
+        if (Input.GetKeyDown(KeyCode.D))
+            DrawACard();
+    }
+
     // draw a single card from the deck
     public void DrawACard(bool fast = false)
     {
@@ -309,7 +315,7 @@ public class Player : MonoBehaviour, ICharacter
 
     public void TransmitInfoAboutPlayerToVisual()
     {
-        PArea.Portrait.GetComponent<IDHolder>().UniqueID = PlayerID;
+        PArea.Portrait.gameObject.AddComponent<IDHolder>().UniqueID = PlayerID;
         if (GetComponent<TurnMaker>() is AITurnMaker)
         {
             // turn off turn making for this character

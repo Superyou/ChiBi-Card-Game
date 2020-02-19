@@ -125,8 +125,9 @@ public class HandVisual : MonoBehaviour
         // let the card know about its place in hand.
         WhereIsTheCardOrCreature w = card.GetComponent<WhereIsTheCardOrCreature>();
         w.BringToFront();
+        w.Slot = 0;
+        w.VisualState = VisualStates.Transition;
 
-        w.Slot = 0; 
         // pass a unique ID to this card.
         IDHolder id = card.AddComponent<IDHolder>();
         id.UniqueID = UniqueID;

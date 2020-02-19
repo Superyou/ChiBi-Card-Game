@@ -26,7 +26,7 @@ public class GlobalSettings: MonoBehaviour
     public GameObject ExplosionPrefab;
     [Header("Other")]
     public Button EndTurnButton;
-    public CardAsset CoinCard;
+    //public CardAsset CoinCard;
     public GameObject GameOverCanvas;
     //public Sprite HeroPowerCrossMark;
 
