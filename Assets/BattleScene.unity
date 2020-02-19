@@ -1082,8 +1082,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RopeGameObject: {fileID: 1375006119}
   RopeSlider: {fileID: 1375006121}
-  TimeForOneTurn: 30
-  RopeBurnTime: 20
+  TimeForOneTurn: 60
+  RopeBurnTime: 55
   TimerText: {fileID: 440182539}
   TimerExpired:
     m_PersistentCalls:
@@ -3377,6 +3377,26 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 224000010199425966, guid: 48c2c96f8ffb9074e8f66efbaf8025aa,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.5246887
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000010199425966, guid: 48c2c96f8ffb9074e8f66efbaf8025aa,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2.104248
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000010775405778, guid: 48c2c96f8ffb9074e8f66efbaf8025aa,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000010775405778, guid: 48c2c96f8ffb9074e8f66efbaf8025aa,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48c2c96f8ffb9074e8f66efbaf8025aa, type: 3}
 --- !u!1 &1375006119 stripped
@@ -3731,7 +3751,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1538785735}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.82, z: -6.05}
+  m_LocalPosition: {x: -0.04, y: 0.94, z: -6.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1845381752}
@@ -5062,6 +5082,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 98177a4e7dc506d409fab00e00f4c8b0, type: 2}
   - {fileID: 11400000, guid: a4400d14b19a4d84f9f14b8ca88da63b, type: 2}
   - {fileID: 11400000, guid: 9a619650840080f4c8610ae0bfb9c187, type: 2}
+  - {fileID: 11400000, guid: c7e1a36f83877490cac25d7315c4cbae, type: 2}
+  - {fileID: 11400000, guid: 5971de69eb5f8244f9ca22f6008366b3, type: 2}
+  - {fileID: 11400000, guid: 8fa8d9d63e870ce42b957e501b3316e1, type: 2}
+  - {fileID: 11400000, guid: 5971de69eb5f8244f9ca22f6008366b3, type: 2}
+  - {fileID: 11400000, guid: 8fa8d9d63e870ce42b957e501b3316e1, type: 2}
 --- !u!1001 &2084308178
 PrefabInstance:
   m_ObjectHideFlags: 0

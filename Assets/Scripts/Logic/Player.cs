@@ -143,10 +143,10 @@ public class Player : MonoBehaviour, ICharacter
     }
 
     //For testing only, diable in complete game
-    void Update() {
-        if (Input.GetKeyDown(KeyCode.D))
-            DrawACard();
-    }
+    //void Update() {
+    //    if (Input.GetKeyDown(KeyCode.D))
+    //        DrawACard();
+    //}
 
     // draw a single card from the deck
     public void DrawACard(bool fast = false)

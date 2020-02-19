@@ -18,7 +18,7 @@ MonoBehaviour:
   ManaCost: 1
   Sound: {fileID: 8300000, guid: 906af8a0cb934da439a4850d8715ac7c, type: 3}
   MaxHealth: 1
-  Attack: 2
+  Attack: 3
   AttacksForOneTurn: 1
   Charge: 1
   CreatureScriptName: 
