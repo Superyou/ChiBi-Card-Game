@@ -1,0 +1,27 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Visual\ManaPoolVisual.cs">
+    <Files>
+      <File FileName="Assets\Scripts\Dragging\DraggingTest\DraggableTest.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Visual\BetterCardRotation.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SO Asset Scripts\Editor\ScriptableObjectUtility2.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SO Asset Scripts\CardAsset\CardAsset.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SO Asset Scripts\CardAsset\Editor\CardUnityIntegration.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SO Asset Scripts\CharacterAsset\Editor\CharacterUnityIntegration.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Visual\OneCardManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Dragging\DraggingTest\DraggableTestWithActions.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Dragging\DraggingTest\DraggingActionsTest.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Dragging\DraggingTest\DraggingActionsTestReturn.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Visual\ManaPoolVisual.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Visual\OneCreatureManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Visual\PlayerPortraitVisual.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Visual\DamageEffect.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Visual\DamageEffectTest.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Visual\HoverPreview.cs" Line="103" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

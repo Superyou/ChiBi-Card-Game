@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41e206fc57f453a42b932de9e94caabf, type: 3}
+  m_Name: Lidian
+  m_EditorClassIdentifier: 
+  characterAsset: {fileID: 11400000, guid: 19c569ae010d09b4c8717cfcb8988269, type: 2}
+  Description: Give All Your Other Warriors +1/+1
+  CardImage: {fileID: 21300000, guid: 33950ffd2bcd7f44bb7901f69741858a, type: 3}
+  ManaCost: 2
+  Sound: {fileID: 8300000, guid: 9db1017425ac84d478d95d3791b6809c, type: 3}
+  MaxHealth: 2
+  Attack: 2
+  AttacksForOneTurn: 1
+  Charge: 0
+  CreatureScriptName: EnhanceCreatures
+  specialCreatureAmount: 1
+  SpellScriptName: 
+  specialSpellAmount: 0
+  Targets: 0
