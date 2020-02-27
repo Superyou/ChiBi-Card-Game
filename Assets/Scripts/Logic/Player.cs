@@ -266,6 +266,7 @@ public class Player : MonoBehaviour, ICharacter
 
     public void Die()
     {
+        Debug.Log("Player Died, Game should End");
         // game over
         // block both players from taking new moves 
         PArea.ControlsON = false;

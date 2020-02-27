@@ -9,6 +9,7 @@ public class HeroPowerButton : MonoBehaviour {
     public GameObject Back;
 
     public GameObject Glow;
+    public bool UsePowerOpenly = false;
 
     private bool wasUsed = false;
     public bool WasUsedThisTurn
@@ -48,10 +49,13 @@ public class HeroPowerButton : MonoBehaviour {
 
     void OnMouseDown()
     {
-        if (!WasUsedThisTurn && Highlighted)
+        if (UsePowerOpenly)
         {
-            GlobalSettings.Instance.Players[owner].UseHeroPower();
-            WasUsedThisTurn= !WasUsedThisTurn;
+            if (!WasUsedThisTurn && Highlighted)
+            {
+                GlobalSettings.Instance.Players[owner].UseHeroPower();
+                WasUsedThisTurn = !WasUsedThisTurn;
+            }
         }
     }
 }

@@ -13,6 +13,8 @@ public class SceneReloader: MonoBehaviour {
         IDHolder.ClearIDHoldersList();
         Command.CommandQueue.Clear();
         Command.CommandExecutionComplete();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(0);
     }
 }

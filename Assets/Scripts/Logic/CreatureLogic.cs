@@ -127,17 +127,25 @@ public class CreatureLogic: ICharacter
         AttacksLeftThisTurn--;
         // calculate the values so that the creature does not fire the DIE command before the Attack command is sent
 
-        int targetHealthAfter = target.Health - Attack;
-        int attackerHealthAfter = Health - target.Attack;
-
+        int targetHealthAfter;
+        int attackerHealthAfter;
+        
         if (target.MinionType == Minion.Calvary && this.MinionType == Minion.Footman || target.MinionType == Minion.Archer && this.MinionType == Minion.Calvary || target.MinionType == Minion.Footman && this.MinionType == Minion.Archer)
         {
             targetHealthAfter = target.Health - 2* Attack;
+            attackerHealthAfter = Health - target.Attack;
             new CreatureAttackCommand(target.UniqueCreatureID, UniqueCreatureID, target.Attack, 2*Attack, attackerHealthAfter, targetHealthAfter).AddToQueue();
         }
-        else
+        else if (this.MinionType == Minion.Calvary && target.MinionType == Minion.Footman || this.MinionType == Minion.Archer && target.MinionType == Minion.Calvary || this.MinionType == Minion.Footman && target.MinionType == Minion.Archer)
         {
             targetHealthAfter = target.Health - Attack;
+            attackerHealthAfter = Health - 2*target.Attack;
+            new CreatureAttackCommand(target.UniqueCreatureID, UniqueCreatureID, 2*target.Attack, Attack, attackerHealthAfter, targetHealthAfter).AddToQueue();
+        }
+        else
+                {
+            targetHealthAfter = target.Health - Attack;
+            attackerHealthAfter = Health - target.Attack;
             new CreatureAttackCommand(target.UniqueCreatureID, UniqueCreatureID, target.Attack, Attack, attackerHealthAfter, targetHealthAfter).AddToQueue();
         }
 
