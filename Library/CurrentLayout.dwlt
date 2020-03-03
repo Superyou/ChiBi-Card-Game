@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 12
+  controlID: 92
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
-  controlID: 13
+  controlID: 93
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 82
+  controlID: 94
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -382,9 +382,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: defbffff
+      m_SelectedIDs: 56350000
+      m_LastClickedID: 13654
+      m_ExpandedIDs: defbffff5635000098350000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -526,20 +526,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Logic/SpellScripts
+    - Assets/SO Assets/Characters
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Scripts/Logic/SpellScripts
+  - Assets/SO Assets/Characters
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Users\sinba\Desktop\GitHub\ChiBi-Card-Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 180}
-    m_SelectedIDs: 902c0000
-    m_LastClickedID: 11408
-    m_ExpandedIDs: 000000006a2700009c290000dc2900001c2a0000fc2a0000422b0000862b0000382d0000562d0000ae2d0000542f0000702f0000a82f0000a6300000c4310000ce310000f431000000ca9a3b
+    scrollPos: {x: 0, y: 332}
+    m_SelectedIDs: 3c320000
+    m_LastClickedID: 12860
+    m_ExpandedIDs: 000000006a2700006a2800009c290000dc2900001c2a0000fc2a0000422b0000862b0000382d0000562d0000ae2d0000542f0000702f0000a82f0000a6300000c4310000ce310000f4310000f432000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -594,7 +594,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c41e0000d81f000038300000cac5fcff2c1f00002a2000005a460000f04f0000160600000c0e0000380c0000d8050000fe100000ce080000f41c0000b21f000000200000761f000054240000d024000070220000b487fcffc2220000c623000080220000ee22000002220000f0220000ea2200001c2200007c2300000e310000e0320000005401006e32000062310000602b0000a8280000322900001e380000ca3200003e330000dc370000ce10000000000000d0150000fe0e000050330000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -645,7 +645,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 887
-    width: 1954
+    width: 1953
     height: 473
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &17

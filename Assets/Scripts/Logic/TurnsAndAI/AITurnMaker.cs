@@ -17,6 +17,7 @@ public class AITurnMaker: TurnMaker {
     // THE LOGIC FOR AI
     IEnumerator MakeAITurn()
     {
+    	yield return new WaitForSeconds(1.5f);
         bool strategyAttackFirst = false;
         if (Random.Range(0, 2) == 0)
             strategyAttackFirst = true;
