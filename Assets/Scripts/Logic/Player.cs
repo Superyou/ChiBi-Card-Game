@@ -259,6 +259,11 @@ public class Player : MonoBehaviour, ICharacter
         // Debug.Log("Mana Left after played a creature: " + ManaLeft);
         // create a new creature object and add it to Table
         CreatureLogic newCreature = new CreatureLogic(this, playedCard.ca);
+        
+        //Adding a sound effect
+        AudioSource enterSound = gameObject.AddComponent<AudioSource>(); 
+        enterSound.PlayOneShot(playedCard.ca.Sound,0.7F);
+        
         table.CreaturesOnTable.Insert(tablePos, newCreature);
         // no matter what happens, move this card to PlayACardSpot
         new PlayACreatureCommand(playedCard, this, tablePos, newCreature.UniqueCreatureID).AddToQueue();

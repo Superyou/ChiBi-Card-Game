@@ -12,6 +12,7 @@ public class OneCreatureManager : MonoBehaviour
     [Header("Image References")]
     public Image CreatureGraphicImage;
     public Image CreatureGlowImage;
+    AudioSource enterSound;
 
     void Awake()
     {

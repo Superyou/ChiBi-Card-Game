@@ -27,4 +27,4 @@ MonoBehaviour:
   specialSpellAmount: 0
   Targets: 0
   IsMinion: 0
-  MinionType: 0
+  MinionType: 3

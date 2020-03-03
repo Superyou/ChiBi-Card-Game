@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -17,7 +17,8 @@ public enum Minion
 {
     Footman,
     Calvary,
-    Archer
+    Archer,
+    Warrior
 }
 
 public class CardAsset : ScriptableObject 

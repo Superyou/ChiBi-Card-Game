@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41e206fc57f453a42b932de9e94caabf, type: 3}
-  m_Name: Eclipse
+  m_Name: FireAssault
   m_EditorClassIdentifier: 
   characterAsset: {fileID: 0}
-  Description: deal 1 damage to a creature
-  CardImage: {fileID: 0}
-  ManaCost: 1
+  Description: Deal 5 damage to a enermy target creature
+  CardImage: {fileID: 21300000, guid: 9555052c3d68bc044af87f4cee187f8f, type: 3}
+  ManaCost: 3
   Sound: {fileID: 0}
   MaxHealth: 0
   Attack: 0
@@ -24,6 +24,7 @@ MonoBehaviour:
   CreatureScriptName: 
   specialCreatureAmount: 0
   SpellScriptName: DealDamageToTarget
-  specialSpellAmount: 1
-  Targets: 4
+  specialSpellAmount: 5
+  Targets: 2
+  IsMinion: 0
   MinionType: 0

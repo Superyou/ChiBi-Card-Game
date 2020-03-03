@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterAsset: {fileID: 0}
   Description: 'Deal 1 damage to every creature on the enermy table '
-  CardImage: {fileID: 0}
+  CardImage: {fileID: 21300000, guid: 43edb8da40ce9384aad52f2d81eb38b9, type: 3}
   ManaCost: 4
   Sound: {fileID: 0}
   MaxHealth: 0
@@ -26,4 +26,5 @@ MonoBehaviour:
   SpellScriptName: DamageAllCreatures
   specialSpellAmount: 1
   Targets: 0
+  IsMinion: 0
   MinionType: 0
