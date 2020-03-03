@@ -26,6 +26,7 @@ public class CreatureLogic: ICharacter
     public int MaxHealth
     {
         get{ return baseHealth;}
+        set { baseHealth = value; }
     }
 
     // current health of this creature
@@ -60,9 +61,15 @@ public class CreatureLogic: ICharacter
 
     // property for Attack
     private int baseAttack;
+    private int attack;
     public int Attack
     {
-        get{ return baseAttack; }
+        get{ return attack; }
+        set
+        {
+            attack = value;
+            
+        }
     }
      
     // number of attacks for one turn if (attacksForOneTurn==2) => Windfury
@@ -80,6 +87,7 @@ public class CreatureLogic: ICharacter
         baseHealth = ca.MaxHealth;
         Health = ca.MaxHealth;
         baseAttack = ca.Attack;
+        Attack = ca.Attack;
         attacksForOneTurn = ca.AttacksForOneTurn;
 
         //
@@ -126,6 +134,8 @@ public class CreatureLogic: ICharacter
     {
         AttacksLeftThisTurn--;
         // calculate the values so that the creature does not fire the DIE command before the Attack command is sent
+        Debug.Log("target.Attack " + target.Attack);
+        Debug.Log("target.Health " + target.Health);
 
         int targetHealthAfter;
         int attackerHealthAfter;
@@ -134,18 +144,25 @@ public class CreatureLogic: ICharacter
         {
             targetHealthAfter = target.Health - 2* Attack;
             attackerHealthAfter = Health - target.Attack;
+
+            Debug.Log("After attack: target.Health " + targetHealthAfter.ToString());
+            Debug.Log("After attack: this.Health  " + attackerHealthAfter.ToString());
             new CreatureAttackCommand(target.UniqueCreatureID, UniqueCreatureID, target.Attack, 2*Attack, attackerHealthAfter, targetHealthAfter).AddToQueue();
         }
         else if (this.MinionType == Minion.Calvary && target.MinionType == Minion.Footman || this.MinionType == Minion.Archer && target.MinionType == Minion.Calvary || this.MinionType == Minion.Footman && target.MinionType == Minion.Archer)
         {
             targetHealthAfter = target.Health - Attack;
             attackerHealthAfter = Health - 2*target.Attack;
+            Debug.Log("After attack: target.Health " + targetHealthAfter.ToString());
+            Debug.Log("After attack: this.Health  " + attackerHealthAfter.ToString());
             new CreatureAttackCommand(target.UniqueCreatureID, UniqueCreatureID, 2*target.Attack, Attack, attackerHealthAfter, targetHealthAfter).AddToQueue();
         }
         else
                 {
             targetHealthAfter = target.Health - Attack;
             attackerHealthAfter = Health - target.Attack;
+            Debug.Log("After attack: target.Health " + targetHealthAfter.ToString());
+            Debug.Log("After attack: this.Health  " + attackerHealthAfter.ToString());
             new CreatureAttackCommand(target.UniqueCreatureID, UniqueCreatureID, target.Attack, Attack, attackerHealthAfter, targetHealthAfter).AddToQueue();
         }
 

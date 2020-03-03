@@ -109,6 +109,9 @@ public class HandVisual : MonoBehaviour
             card = CreateACardAtPosition(c, DeckTransform.position, new Vector3(0f, -179f, 0f));
         else
             card = CreateACardAtPosition(c, OtherCardDrawSourceTransform.position, new Vector3(0f, -179f, 0f));
+
+        Debug.Log("Finish creating the card position");
+        
         // save this as visual representation in CardLogic
         // Player ownerPlayer = GlobalSettings.Instance.Players[owner];
         //Debug.Log(ownerPlayer);
@@ -179,7 +182,11 @@ public class HandVisual : MonoBehaviour
         if (c.MaxHealth > 0)
         {
             // this card is a creature card
+            Debug.Log("Instantiating a card");
+
             card = GameObject.Instantiate(GlobalSettings.Instance.CreatureCardPrefab, position, Quaternion.Euler(eulerAngles)) as GameObject;
+
+            Debug.Log("Finish Instantiating a card");
         }
         else
         {
@@ -200,7 +207,7 @@ public class HandVisual : MonoBehaviour
         OneCardManager manager = card.GetComponent<OneCardManager>();
         manager.cardAsset = c;
         manager.ReadCardFromAsset();
-
+        Debug.Log("Finish setting cardmanager");
         return card;
     }
 

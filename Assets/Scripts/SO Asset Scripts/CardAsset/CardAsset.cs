@@ -45,6 +45,7 @@ public class CardAsset : ScriptableObject
     public TargetingOptions Targets;
 
     [Header("MinionInfo")]
+    public bool IsMinion;
     public Minion MinionType;
 
 }

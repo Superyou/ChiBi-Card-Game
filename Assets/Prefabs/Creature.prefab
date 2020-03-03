@@ -2306,13 +2306,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdf1616c3cd763946ace32300f15d73f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardAsset: {fileID: 11400000, guid: 8fa8d9d63e870ce42b957e501b3316e1, type: 2}
+  cardAsset: {fileID: 0}
   PreviewManager: {fileID: 0}
   NameText: {fileID: 114000013184272730}
   ManaCostText: {fileID: 114000012895776854}
   DescriptionText: {fileID: 114000011324537882}
   HealthText: {fileID: 114000012083924860}
   AttackText: {fileID: 114000011082706114}
+  MinionText: {fileID: 114000011289139668}
   CardTopRibbonImage: {fileID: 114000013834216962}
   CardLowRibbonImage: {fileID: 114000010400315202}
   CardGraphicImage: {fileID: 114000013051231874}

@@ -22,6 +22,7 @@ public class DrawACardCommand : Command {
 
     public override void StartCommandExecution()
     {
+        Debug.Log("Start Draw a card");
         p.PArea.PDeck.CardsInDeck--;
         p.PArea.handVisual.GivePlayerACard(cl.ca, cl.UniqueCardID, fast, fromDeck);
     }

@@ -1711,13 +1711,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdf1616c3cd763946ace32300f15d73f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardAsset: {fileID: 11400000, guid: 8fa8d9d63e870ce42b957e501b3316e1, type: 2}
+  cardAsset: {fileID: 0}
   PreviewManager: {fileID: 0}
   NameText: {fileID: 114000013478085934}
   ManaCostText: {fileID: 114000010232582816}
   DescriptionText: {fileID: 114000011040794644}
   HealthText: {fileID: 114000011987086378}
   AttackText: {fileID: 114000014219516484}
+  MinionText: {fileID: 114000010574154316}
   CardTopRibbonImage: {fileID: 114000013110077824}
   CardLowRibbonImage: {fileID: 114000010988386408}
   CardGraphicImage: {fileID: 114000010770104894}
@@ -3631,13 +3632,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdf1616c3cd763946ace32300f15d73f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardAsset: {fileID: 11400000, guid: 8fa8d9d63e870ce42b957e501b3316e1, type: 2}
+  cardAsset: {fileID: 0}
   PreviewManager: {fileID: 114000011750329094}
   NameText: {fileID: 114000013423122620}
   ManaCostText: {fileID: 114000013155922678}
   DescriptionText: {fileID: 114000012036968048}
   HealthText: {fileID: 114000014185927380}
   AttackText: {fileID: 114000013847617768}
+  MinionText: {fileID: 114000012935320728}
   CardTopRibbonImage: {fileID: 114000010513907702}
   CardLowRibbonImage: {fileID: 114000013262081336}
   CardGraphicImage: {fileID: 114000014182235964}

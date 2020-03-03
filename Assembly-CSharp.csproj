@@ -92,6 +92,7 @@
     <Compile Include="Assets\Scripts\Logic\CreatureScripts\BiteOwner.cs" />
     <Compile Include="Assets\Scripts\Logic\CreatureScripts\CreatureEffect.cs" />
     <Compile Include="Assets\Scripts\Logic\CreatureScripts\DamageEnermy.cs" />
+    <Compile Include="Assets\Scripts\Logic\CreatureScripts\DamageWhenDied.cs" />
     <Compile Include="Assets\Scripts\Logic\CreatureScripts\EnhanceCreatures.cs" />
     <Compile Include="Assets\Scripts\Logic\Deck.cs" />
     <Compile Include="Assets\Scripts\Logic\Hand.cs" />

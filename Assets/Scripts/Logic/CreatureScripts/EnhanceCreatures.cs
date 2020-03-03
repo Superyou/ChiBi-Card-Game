@@ -16,9 +16,15 @@ public class EnhanceCreatures : CreatureEffect
         {
             if (cl != creature)
             {
+                
+                
                 new EnhanceCreatureCommand(cl.ID, specialAmount, healthAfter: cl.Health + specialAmount, attackAfter: cl.Attack + specialAmount).AddToQueue();
+                cl.MaxHealth += specialAmount;
                 cl.Health += specialAmount;
-                //cl.Attack += specialAmount;
+                cl.Attack += specialAmount;
+
+                Debug.Log("After enhance: Attack " + cl.Attack.ToString());
+                Debug.Log("After enhance: Health  " + cl.Health.ToString());
 
             }
         }

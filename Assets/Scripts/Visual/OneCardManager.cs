@@ -13,6 +13,7 @@ public class OneCardManager : MonoBehaviour {
     public Text DescriptionText;
     public Text HealthText;
     public Text AttackText;
+    public Text MinionText;
     [Header("Image References")]
     public Image CardTopRibbonImage;
     public Image CardLowRibbonImage;
@@ -46,6 +47,7 @@ public class OneCardManager : MonoBehaviour {
 
     public void ReadCardFromAsset()
     {
+        Debug.Log("Read From Asset");
         // universal actions for any Card
         // 1) apply tint
         if (cardAsset.characterAsset != null)
@@ -70,16 +72,24 @@ public class OneCardManager : MonoBehaviour {
         DescriptionText.text = cardAsset.Description;
         // 5) Change the card graphic sprite
         CardGraphicImage.sprite = cardAsset.CardImage;
+        
+
+        Debug.Log("Finish Reading Minion Type");
 
         if (cardAsset.MaxHealth != 0)
         {
             // this is a creature
             AttackText.text = cardAsset.Attack.ToString();
             HealthText.text = cardAsset.MaxHealth.ToString();
+
+            //Only for Minions
+            if (cardAsset.IsMinion)
+                MinionText.text = cardAsset.MinionType.ToString();
         }
 
         if (PreviewManager != null)
         {
+            Debug.Log("Here is the previewManager");
             // this is a card and not a preview
             // Preview GameObject will have OneCardManager as well, but PreviewManager should be null there
             PreviewManager.cardAsset = cardAsset;

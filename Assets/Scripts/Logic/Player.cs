@@ -91,6 +91,14 @@ public class Player : MonoBehaviour, ICharacter
                 Die(); 
         }
     }
+    public int Attack
+    {
+        get { return 0; }
+        set
+        {
+            
+        }
+    }
 
     // CODE FOR EVENTS TO LET CREATURES KNOW WHEN TO CAUSE EFFECTS
     public delegate void VoidWithNoArguments();
@@ -308,6 +316,7 @@ public class Player : MonoBehaviour, ICharacter
     public void LoadCharacterInfoFromAsset()
     {
         Health = charAsset.MaxHealth;
+
         // change the visuals for portrait, hero power, etc...
         PArea.Portrait.charAsset = charAsset;
         PArea.Portrait.ApplyLookFromAsset();

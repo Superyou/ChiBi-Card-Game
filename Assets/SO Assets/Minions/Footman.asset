@@ -26,3 +26,5 @@ MonoBehaviour:
   SpellScriptName: 
   specialSpellAmount: 0
   Targets: 0
+  IsMinion: 1
+  MinionType: 0
