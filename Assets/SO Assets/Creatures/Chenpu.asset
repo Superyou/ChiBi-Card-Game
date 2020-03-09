@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41e206fc57f453a42b932de9e94caabf, type: 3}
+  m_Name: Chenpu
+  m_EditorClassIdentifier: 
+  characterAsset: {fileID: 11400000, guid: a43c2c80c406d9d48b9ef5ccf3b506bd, type: 2}
+  Description: Draw an Extra Card
+  CardImage: {fileID: 21300000, guid: 091cacc8e6e0ced47b16f93d5b7c91ef, type: 3}
+  ManaCost: 5
+  Sound: {fileID: 8300000, guid: 0555be1306cc10a4fbf6dc8548df25a8, type: 3}
+  MaxHealth: 4
+  Attack: 4
+  AttacksForOneTurn: 1
+  Charge: 0
+  Fury: 0
+  LifeSteal: 0
+  CreatureScriptName: DrawExtraCard
+  specialCreatureAmount: 1
+  SpellScriptName: 
+  specialSpellAmount: 0
+  Targets: 0
+  IsMinion: 0
+  MinionType: 3

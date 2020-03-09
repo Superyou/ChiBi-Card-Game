@@ -12,6 +12,11 @@ public class Menu : MonoBehaviour
 		SceneManager.LoadScene ("AIScene");	
     }    
 
+    	public void TestGame()
+	{
+		SceneManager.LoadScene ("BattleScene");	
+    }    
+
 	//Quit Button
 	public void QuitGame(){
 		Debug.Log("QUIT!");

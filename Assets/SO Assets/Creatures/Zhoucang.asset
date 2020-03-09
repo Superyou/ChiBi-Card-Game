@@ -13,16 +13,16 @@ MonoBehaviour:
   m_Name: Zhoucang
   m_EditorClassIdentifier: 
   characterAsset: {fileID: 11400000, guid: 480171153d0e72d46889754854821468, type: 2}
-  Description: 'Windfury,Deathrattle: Deal 3 damage to enermy hero'
+  Description: 'WindFury; Deathrattle: Deal 1 damage to enermy hero'
   CardImage: {fileID: 21300000, guid: cfde760a8f7299e42b93996039302cc4, type: 3}
-  ManaCost: 2
+  ManaCost: 3
   Sound: {fileID: 8300000, guid: 3bb315c431c90c04eb52850570670f96, type: 3}
   MaxHealth: 3
   Attack: 1
   AttacksForOneTurn: 2
   Charge: 0
   CreatureScriptName: DamageWhenDied
-  specialCreatureAmount: 3
+  specialCreatureAmount: 1
   SpellScriptName: 
   specialSpellAmount: 0
   Targets: 0

@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Cavalry
   m_EditorClassIdentifier: 
   characterAsset: {fileID: 0}
-  Description: 'deal double damage to Archer '
+  Description: 'deal +1 damage to Archer '
   CardImage: {fileID: 21300000, guid: edc5f82da5a81e14abac25316d04f992, type: 3}
-  ManaCost: 3
+  ManaCost: 1
   Sound: {fileID: 0}
   MaxHealth: 2
-  Attack: 3
+  Attack: 1
   AttacksForOneTurn: 1
   Charge: 1
   CreatureScriptName: 

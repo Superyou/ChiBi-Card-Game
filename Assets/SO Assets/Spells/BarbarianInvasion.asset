@@ -21,10 +21,12 @@ MonoBehaviour:
   Attack: 0
   AttacksForOneTurn: 1
   Charge: 0
+  Fury: 0
+  LifeSteal: 0
   CreatureScriptName: 
   specialCreatureAmount: 0
   SpellScriptName: DealDamageToTarget
-  specialSpellAmount: 1
+  specialSpellAmount: 2
   Targets: 4
   IsMinion: 0
   MinionType: 0

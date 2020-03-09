@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -33,6 +33,9 @@ public class CreatureLogic: ICharacter
     private int health;
 
     private Minion MinionType;
+
+    private bool isRage;
+    private bool isLifeSteal;
 
     public int Health
     {
@@ -89,6 +92,8 @@ public class CreatureLogic: ICharacter
         baseAttack = ca.Attack;
         Attack = ca.Attack;
         attacksForOneTurn = ca.AttacksForOneTurn;
+        isRage = ca.Fury;
+        isLifeSteal = ca.LifeSteal;
 
         //
         MinionType = ca.MinionType;
@@ -110,6 +115,8 @@ public class CreatureLogic: ICharacter
     public void OnTurnStart()
     {
         AttacksLeftThisTurn = attacksForOneTurn;
+        if (effect != null)
+            effect.WhenTurnStart();
     }
 
     public void Die()
@@ -139,37 +146,46 @@ public class CreatureLogic: ICharacter
 
         int targetHealthAfter;
         int attackerHealthAfter;
-        
+        if(isRage){
+            Attack *= 2;
+        }
         if (target.MinionType == Minion.Calvary && this.MinionType == Minion.Footman || target.MinionType == Minion.Archer && this.MinionType == Minion.Calvary || target.MinionType == Minion.Footman && this.MinionType == Minion.Archer)
         {
-            targetHealthAfter = target.Health - 2* Attack;
+            targetHealthAfter = target.Health - 1-Attack;
             attackerHealthAfter = Health - target.Attack;
-
+  	     if(isLifeSteal){
+        	attackerHealthAfter+=Attack;
+        }
             Debug.Log("After attack: target.Health " + targetHealthAfter.ToString());
             Debug.Log("After attack: this.Health  " + attackerHealthAfter.ToString());
-            new CreatureAttackCommand(target.UniqueCreatureID, UniqueCreatureID, target.Attack, 2*Attack, attackerHealthAfter, targetHealthAfter).AddToQueue();
+            new CreatureAttackCommand(target.UniqueCreatureID, UniqueCreatureID, target.Attack, 1+Attack, attackerHealthAfter, targetHealthAfter).AddToQueue();
         }
         else if (this.MinionType == Minion.Calvary && target.MinionType == Minion.Footman || this.MinionType == Minion.Archer && target.MinionType == Minion.Calvary || this.MinionType == Minion.Footman && target.MinionType == Minion.Archer)
         {
             targetHealthAfter = target.Health - Attack;
-            attackerHealthAfter = Health - 2*target.Attack;
+            attackerHealthAfter = Health - 1 -target.Attack;
+             if(isLifeSteal){
+        	attackerHealthAfter+=Attack;
+        }
             Debug.Log("After attack: target.Health " + targetHealthAfter.ToString());
             Debug.Log("After attack: this.Health  " + attackerHealthAfter.ToString());
-            new CreatureAttackCommand(target.UniqueCreatureID, UniqueCreatureID, 2*target.Attack, Attack, attackerHealthAfter, targetHealthAfter).AddToQueue();
+            new CreatureAttackCommand(target.UniqueCreatureID, UniqueCreatureID, 1+target.Attack, Attack, attackerHealthAfter, targetHealthAfter).AddToQueue();
         }
         else
-                {
+                {         
             targetHealthAfter = target.Health - Attack;
             attackerHealthAfter = Health - target.Attack;
+              	 if(isLifeSteal){
+        	attackerHealthAfter+=Attack;
+        }
             Debug.Log("After attack: target.Health " + targetHealthAfter.ToString());
             Debug.Log("After attack: this.Health  " + attackerHealthAfter.ToString());
             new CreatureAttackCommand(target.UniqueCreatureID, UniqueCreatureID, target.Attack, Attack, attackerHealthAfter, targetHealthAfter).AddToQueue();
-        }
-
-            
-        
+        }            
         //new CreatureAttackCommand(target.UniqueCreatureID, UniqueCreatureID, target.Attack, Attack, attackerHealthAfter, targetHealthAfter).AddToQueue();
-
+          if(isRage){
+            Attack /= 2;
+        }
         target.Health = targetHealthAfter;
         Health = attackerHealthAfter;
     }

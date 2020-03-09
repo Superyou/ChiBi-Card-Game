@@ -24,5 +24,7 @@ public abstract class CreatureEffect
     //Deathrattle
     public virtual void WhenACreatureDies() { }
 
+    public virtual void WhenTurnStart(){}
+
 
 }

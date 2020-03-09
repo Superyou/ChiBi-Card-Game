@@ -57,7 +57,12 @@ public class Player : MonoBehaviour, ICharacter
         get{ return manaThisTurn;}
         set
         {
-            manaThisTurn = value;
+            if (value < 0)
+                manaThisTurn = 0;
+            else if (value > PArea.ManaBar.Crystals.Length)
+                manaThisTurn = PArea.ManaBar.Crystals.Length;
+            else
+                manaThisTurn = value;
             //PArea.ManaBar.TotalCrystals = manaThisTurn;
             new UpdateManaCrystalsCommand(this, manaThisTurn, manaLeft).AddToQueue();
         }
@@ -71,7 +76,13 @@ public class Player : MonoBehaviour, ICharacter
         { return manaLeft;}
         set
         {
-            manaLeft = value;
+            if (value < 0)
+                manaLeft = 0;
+            else if (value > PArea.ManaBar.Crystals.Length)
+                manaLeft = PArea.ManaBar.Crystals.Length;
+            else
+                manaLeft = value;
+            
             //PArea.ManaBar.AvailableCrystals = manaLeft;
             new UpdateManaCrystalsCommand(this, ManaThisTurn, manaLeft).AddToQueue();
             //Debug.Log(ManaLeft);
@@ -79,6 +90,7 @@ public class Player : MonoBehaviour, ICharacter
                 HighlightPlayableCards();
         }
     }
+
 
     private int health;
     public int Health

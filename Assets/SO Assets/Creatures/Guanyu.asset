@@ -15,12 +15,14 @@ MonoBehaviour:
   characterAsset: {fileID: 11400000, guid: 480171153d0e72d46889754854821468, type: 2}
   Description: Charge; Windfury
   CardImage: {fileID: 21300000, guid: b8d41a7943b40624c937139f484b854c, type: 3}
-  ManaCost: 5
+  ManaCost: 9
   Sound: {fileID: 8300000, guid: bf64c2e87705b1740b0818fbf0848d6d, type: 3}
   MaxHealth: 9
   Attack: 5
   AttacksForOneTurn: 2
   Charge: 1
+  Fury: 0
+  LifeSteal: 0
   CreatureScriptName: 
   specialCreatureAmount: 0
   SpellScriptName: 

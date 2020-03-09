@@ -15,7 +15,7 @@ MonoBehaviour:
   characterAsset: {fileID: 11400000, guid: 19c569ae010d09b4c8717cfcb8988269, type: 2}
   Description: 'Battlecry: Damage 2 to enermy'
   CardImage: {fileID: 21300000, guid: 3de89e21eead97e4ea2da281997168d5, type: 3}
-  ManaCost: 3
+  ManaCost: 4
   Sound: {fileID: 8300000, guid: 22d6951665a0cc845bc53c0ac4efbb09, type: 3}
   MaxHealth: 5
   Attack: 2

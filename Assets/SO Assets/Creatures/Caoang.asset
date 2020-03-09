@@ -15,7 +15,7 @@ MonoBehaviour:
   characterAsset: {fileID: 11400000, guid: 19c569ae010d09b4c8717cfcb8988269, type: 2}
   Description: Charge
   CardImage: {fileID: 21300000, guid: 28d5bd2e1d508924e9e71946aa5371f2, type: 3}
-  ManaCost: 1
+  ManaCost: 2
   Sound: {fileID: 8300000, guid: 906af8a0cb934da439a4850d8715ac7c, type: 3}
   MaxHealth: 1
   Attack: 3
