@@ -26,7 +26,7 @@ MonoBehaviour:
   CreatureScriptName: 
   specialCreatureAmount: 0
   SpellScriptName: DealDamageToTarget
-  specialSpellAmount: 2
+  specialSpellAmount: 1
   Targets: 4
   IsMinion: 0
   MinionType: 0

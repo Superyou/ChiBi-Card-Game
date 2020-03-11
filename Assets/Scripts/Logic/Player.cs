@@ -129,6 +129,7 @@ public class Player : MonoBehaviour, ICharacter
         Players = GameObject.FindObjectsOfType<Player>();
         // obtain unique id from IDFactory
         PlayerID = IDFactory.GetUniqueID();
+        drawdamagecount = 0;
     }
 
     public virtual void OnTurnStart()
@@ -171,6 +172,9 @@ public class Player : MonoBehaviour, ICharacter
     //        DrawACard();
     //}
 
+
+    private int drawdamagecount;
+
     // draw a single card from the deck
     public void DrawACard(bool fast = false)
     {
@@ -192,6 +196,10 @@ public class Player : MonoBehaviour, ICharacter
         else
         {
             // there are no cards in the deck, take fatigue damage.
+            drawdamagecount++;
+            new DealDamageCommand(this.PlayerID, drawdamagecount, health - drawdamagecount).AddToQueue();
+            Health -= drawdamagecount;
+
         }
        
     }
