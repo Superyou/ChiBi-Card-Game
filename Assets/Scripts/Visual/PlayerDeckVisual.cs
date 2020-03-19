@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
+using System.Collections;
 using DG.Tweening;
 
 // this class should be attached to the deck
@@ -8,6 +10,7 @@ public class PlayerDeckVisual : MonoBehaviour {
 
     public AreaPosition owner;
     public float HeightOfOneCard = 0.012f;
+    public Text cardText;
 
     void Start()
     {
@@ -23,6 +26,7 @@ public class PlayerDeckVisual : MonoBehaviour {
         {
             cardsInDeck = value;
             transform.position = new Vector3(transform.position.x, transform.position.y, - HeightOfOneCard * value);
+            cardText.text = string.Format("Cards Left:"+cardsInDeck.ToString());
         }
     }
    
