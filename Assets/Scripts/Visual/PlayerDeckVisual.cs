@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-using System.Collections;
 using DG.Tweening;
 
 // this class should be attached to the deck

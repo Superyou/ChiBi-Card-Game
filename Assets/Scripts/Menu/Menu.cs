@@ -9,7 +9,7 @@ public class Menu : MonoBehaviour
 	// New Game Button
 	public void PlayGame()
 	{
-		SceneManager.LoadScene ("AIScene");	
+		SceneManager.LoadScene ("SelectScene");	
     }    
 
     	public void TestGame()
@@ -32,6 +32,22 @@ public class Menu : MonoBehaviour
 
     public void ReturnMain()
     {
+        IDFactory.ResetIDs();
+        IDHolder.ClearIDHoldersList();
+        Command.CommandQueue.Clear();
+        Command.CommandExecutionComplete();
         SceneManager.LoadScene("Menu");
     }
+     public void ReturnMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+    public void LevelOne()
+    {
+        SceneManager.LoadScene ("Level1"); 
+    }
+    public void LevelEight()
+    {
+        SceneManager.LoadScene ("Level8"); 
+    } 
 }

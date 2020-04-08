@@ -110,8 +110,10 @@
     <Compile Include="Assets\Scripts\Logic\Table.cs" />
     <Compile Include="Assets\Scripts\Logic\TurnManager.cs" />
     <Compile Include="Assets\Scripts\Logic\TurnsAndAI\AITurnMaker.cs" />
+    <Compile Include="Assets\Scripts\Logic\TurnsAndAI\AITurnMaker2.cs" />
     <Compile Include="Assets\Scripts\Logic\TurnsAndAI\PlayerTurnMaker.cs" />
     <Compile Include="Assets\Scripts\Logic\TurnsAndAI\TurnMaker.cs" />
+    <Compile Include="Assets\Scripts\Menu\LoadLevel.cs" />
     <Compile Include="Assets\Scripts\Menu\Menu.cs" />
     <Compile Include="Assets\Scripts\RaycastExample.cs" />
     <Compile Include="Assets\Scripts\SceneReloader.cs" />
