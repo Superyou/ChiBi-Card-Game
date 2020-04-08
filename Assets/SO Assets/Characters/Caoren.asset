@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 917561878a8602640ab159ede231f37f, type: 3}
+  m_Name: Caoren
+  m_EditorClassIdentifier: 
+  Class: 0
+  ClassName: Caoren
+  MaxHealth: 40
+  HeroPowerName: HeroPowerHeal
+  AvatarImage: {fileID: 21300000, guid: e52296b5d127b8a429d0c8ef9e6516ac, type: 3}
+  HeroPowerIconImage: {fileID: 21300000, guid: 71b50f7d0a4b96b44b535bd415d0ea79, type: 3}
+  AvatarBGImage: {fileID: 0}
+  HeroPowerBGImage: {fileID: 0}
+  AvatarBGTint:
+    serializedVersion: 2
+    rgba: 4283110675
+  HeroPowerBGTint:
+    serializedVersion: 2
+    rgba: 4284093967
+  ClassCardTint:
+    serializedVersion: 2
+    rgba: 4291598435
+  ClassRibbonsTint:
+    serializedVersion: 2
+    rgba: 4286293944

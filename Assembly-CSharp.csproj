@@ -106,6 +106,7 @@
     <Compile Include="Assets\Scripts\Logic\SpellScripts\GiveManaBonus.cs" />
     <Compile Include="Assets\Scripts\Logic\SpellScripts\HeroPower2Face.cs" />
     <Compile Include="Assets\Scripts\Logic\SpellScripts\HeroPowerDrawCardTakeDamage.cs" />
+    <Compile Include="Assets\Scripts\Logic\SpellScripts\HeroPowerHeal.cs" />
     <Compile Include="Assets\Scripts\Logic\SpellScripts\SpellEffect.cs" />
     <Compile Include="Assets\Scripts\Logic\Table.cs" />
     <Compile Include="Assets\Scripts\Logic\TurnManager.cs" />

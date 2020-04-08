@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 548}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 681, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 123
+  controlID: 12
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -213,12 +213,12 @@ MonoBehaviour:
     height: 814
   m_MinSize: {x: 204, y: 224}
   m_MaxSize: {x: 4004, y: 4024}
-  m_ActualView: {fileID: 12}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
   - {fileID: 12}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -321,7 +321,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -382,9 +382,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 76240000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: defbffff
+      m_ExpandedIDs: 4262ffff88b6fffff0bdfffff2bdffff76c1ffffdefbffff4e490000524900005e4900006449000080490000b4490000b8490000c4490000dc490000e8490000ee490000084a0000164a0000204a0000624a0000744a00007e4a00008a4a0000984a0000c44a0000e04a0000ee4a0000f84a0000fc4a00000c4b0000244b00002e4b0000384b00004a4b0000564b00009e4b0000ac4b0000b04b0000d04b0000da4b0000085000001a5000005e5000007e6d0000aa6d0000f86d0000306e0000a46e0000486f00009e6f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -440,9 +440,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.93144, y: 2.6096623, z: 24.546024}
+    m_Target: {x: 1027.2107, y: 434.9231, z: -9.875}
     speed: 2
-    m_Value: {x: 1.93144, y: 2.6096623, z: 24.546024}
+    m_Value: {x: 1027.2107, y: 434.9231, z: -9.875}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -474,9 +474,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 23.457058
+    m_Target: 803.6271
     speed: 2
-    m_Value: 23.457058
+    m_Value: 803.6271
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -526,20 +526,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Logic/SpellScripts
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Scripts/Logic/SpellScripts
+  - Assets
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Users\sinba\Desktop\GitHub\ChiBi-Card-Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 80}
-    m_SelectedIDs: 102d0000
-    m_LastClickedID: 11536
-    m_ExpandedIDs: 000000007a270000d2290000162a0000602a0000602b0000aa2b0000f02b0000d02c0000bc2d0000da2d00003e2e0000402e00009e2f0000c62f0000f22f0000103000004c300000e4300000663100008a3200009632000098320000be32000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 7a270000
+    m_LastClickedID: 10106
+    m_ExpandedIDs: 000000007a2700008a280000d2290000162a0000602a0000602b0000aa2b0000f02b0000d02c0000bc2d0000da2d00003e2e0000402e00009e2f0000c62f0000f22f0000103000004c300000e4300000663100008a3200009632000098320000be32000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -676,7 +676,7 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 79952
+  m_LastSelectedObjectID: -40916
 --- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
