@@ -93,6 +93,7 @@ public class Player : MonoBehaviour, ICharacter
 
 
     private int health;
+    public int MaxHealth;
     public int Health
     {
         get { return health;}
@@ -340,6 +341,8 @@ public class Player : MonoBehaviour, ICharacter
     // START GAME METHODS
     public void LoadCharacterInfoFromAsset()
     {
+        
+        MaxHealth = charAsset.MaxHealth;
         Health = charAsset.MaxHealth;
 
         // change the visuals for portrait, hero power, etc...

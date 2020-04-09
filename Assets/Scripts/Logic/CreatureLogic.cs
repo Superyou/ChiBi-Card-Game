@@ -132,9 +132,20 @@ public class CreatureLogic: ICharacter
     public void GoFace()
     {
         AttacksLeftThisTurn--;
-        int targetHealthAfter = owner.otherPlayer.Health - Attack;
-        new CreatureAttackCommand(owner.otherPlayer.PlayerID, UniqueCreatureID, 0, Attack, Health, targetHealthAfter).AddToQueue();
-        owner.otherPlayer.Health -= Attack;
+        int targetHealthAfter;
+        if (isRage){
+            targetHealthAfter = owner.otherPlayer.Health - 2*Attack;
+            new CreatureAttackCommand(owner.otherPlayer.PlayerID, UniqueCreatureID, 0, 2*Attack, Health, targetHealthAfter).AddToQueue();
+            owner.otherPlayer.Health -= 2*Attack;
+
+        }
+        else {
+            targetHealthAfter = owner.otherPlayer.Health - Attack;
+            new CreatureAttackCommand(owner.otherPlayer.PlayerID, UniqueCreatureID, 0, Attack, Health, targetHealthAfter).AddToQueue();
+            owner.otherPlayer.Health -= Attack;
+        }
+        
+
     }
 
     public void AttackCreature (CreatureLogic target)

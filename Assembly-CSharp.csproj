@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\Commands\DrawACardCommand.cs" />
      <Compile Include="Assets\Scripts\Commands\EnhanceCreatureCommand.cs" />
      <Compile Include="Assets\Scripts\Commands\GameOverCommand.cs" />
+     <Compile Include="Assets\Scripts\Commands\HealCommand.cs" />
      <Compile Include="Assets\Scripts\Commands\PlayACreatureCommand.cs" />
      <Compile Include="Assets\Scripts\Commands\PlayASpellCardCommand.cs" />
      <Compile Include="Assets\Scripts\Commands\ShowMessageCommand.cs" />

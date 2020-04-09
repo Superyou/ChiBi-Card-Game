@@ -24,7 +24,7 @@ public class EnhanceCreatures : CreatureEffect
                 cl.Attack += specialAmount;
 
                 Debug.Log("After enhance: Attack " + cl.Attack.ToString());
-                Debug.Log("After enhance: Health  " + cl.Health.ToString());
+                Debug.Log("After enhance: Health " + cl.Health.ToString());
 
             }
         }

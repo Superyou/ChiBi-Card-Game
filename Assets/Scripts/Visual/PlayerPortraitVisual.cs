@@ -42,6 +42,14 @@ public class PlayerPortraitVisual : MonoBehaviour {
             HealthText.text = healthAfter.ToString();
         }
     }
+    public void TakeHeal(int amount, int healthAfter)
+    {
+        if (amount > 0)
+        {
+            EnhanceEffect.CreateEnhanceEffect(transform.position, amount);
+            HealthText.text = healthAfter.ToString();
+        }
+    }
 
     public void Explode()
     {
