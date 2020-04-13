@@ -1393,6 +1393,7 @@ MonoBehaviour:
   deck: {fileID: 2069269786}
   hand: {fileID: 85300765}
   table: {fileID: 467684676}
+  MaxHealth: 0
 --- !u!114 &271381870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1565,6 +1566,7 @@ MonoBehaviour:
   deck: {fileID: 1179533829}
   hand: {fileID: 1866637729}
   table: {fileID: 155136115}
+  MaxHealth: 0
 --- !u!114 &405968564
 MonoBehaviour:
   m_ObjectHideFlags: 0

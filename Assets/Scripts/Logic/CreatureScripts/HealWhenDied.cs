@@ -9,7 +9,8 @@ public class HealWhenDied : CreatureEffect
 
     public override void WhenACreatureDies()
     {
-        new DealDamageCommand(owner.PlayerID, specialAmount, owner.Health + specialAmount).AddToQueue();
+        // new DealDamageCommand(owner.PlayerID, specialAmount, owner.Health + specialAmount).AddToQueue();
+        new HealCommand(owner.PlayerID, specialAmount, owner.Health + specialAmount).AddToQueue();
         owner.Health += specialAmount;
     }
 

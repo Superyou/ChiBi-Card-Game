@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: EliteFootman
   m_EditorClassIdentifier: 
   characterAsset: {fileID: 0}
-  Description: 'deal +1 damage to Cavalry '
+  Description: 'Deal +1 damage to Cavalry '
   CardImage: {fileID: 21300000, guid: d0e4b99c1a44e3e40998874639bdea04, type: 3}
   ManaCost: 3
   Sound: {fileID: 0}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Chenpu
   m_EditorClassIdentifier: 
   characterAsset: {fileID: 11400000, guid: a43c2c80c406d9d48b9ef5ccf3b506bd, type: 2}
-  Description: Draw an Extra Card
+  Description: 'Battlecry: Draw an Extra Card'
   CardImage: {fileID: 21300000, guid: 091cacc8e6e0ced47b16f93d5b7c91ef, type: 3}
   ManaCost: 5
   Sound: {fileID: 8300000, guid: 0555be1306cc10a4fbf6dc8548df25a8, type: 3}

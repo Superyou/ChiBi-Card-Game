@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Archer
   m_EditorClassIdentifier: 
   characterAsset: {fileID: 0}
-  Description: deal +1 damage to Footman
+  Description: Deal +1 damage to Footman
   CardImage: {fileID: 21300000, guid: a99a255865abc4f42a954216ac915c13, type: 3}
   ManaCost: 1
   Sound: {fileID: 0}

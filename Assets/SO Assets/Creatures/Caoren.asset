@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Caoren
   m_EditorClassIdentifier: 
   characterAsset: {fileID: 11400000, guid: 19c569ae010d09b4c8717cfcb8988269, type: 2}
-  Description: 'Deathrattle: Heal 10 Health to Hero'
+  Description: 'Deathrattle: Heal 10 Health to Your Hero'
   CardImage: {fileID: 21300000, guid: e52296b5d127b8a429d0c8ef9e6516ac, type: 3}
   ManaCost: 8
   Sound: {fileID: 8300000, guid: d86fa3426e42f054c9a8eec953ad44db, type: 3}

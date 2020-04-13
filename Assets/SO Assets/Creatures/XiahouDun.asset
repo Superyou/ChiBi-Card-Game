@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: XiahouDun
   m_EditorClassIdentifier: 
   characterAsset: {fileID: 11400000, guid: 19c569ae010d09b4c8717cfcb8988269, type: 2}
-  Description: Give All Your Other Warriors +3/+3
+  Description: 'Battlecry: Give All Your Other Warriors +3/+3'
   CardImage: {fileID: 21300000, guid: 3ef9c36408d0ad44e937d8ba1c999d55, type: 3}
   ManaCost: 9
   Sound: {fileID: 8300000, guid: 8248c3780a4e8f64e9b826367328b898, type: 3}

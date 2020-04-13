@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Lidian
   m_EditorClassIdentifier: 
   characterAsset: {fileID: 11400000, guid: 19c569ae010d09b4c8717cfcb8988269, type: 2}
-  Description: Give All Your Other Warriors +1/+1
+  Description: 'Battlecry: Give All Your Other Warriors +1/+1'
   CardImage: {fileID: 21300000, guid: 33950ffd2bcd7f44bb7901f69741858a, type: 3}
   ManaCost: 3
   Sound: {fileID: 8300000, guid: 9db1017425ac84d478d95d3791b6809c, type: 3}
@@ -21,6 +21,8 @@ MonoBehaviour:
   Attack: 2
   AttacksForOneTurn: 1
   Charge: 0
+  Fury: 0
+  LifeSteal: 0
   CreatureScriptName: EnhanceCreatures
   specialCreatureAmount: 1
   SpellScriptName: 

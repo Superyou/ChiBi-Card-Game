@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Zhangfei
   m_EditorClassIdentifier: 
   characterAsset: {fileID: 11400000, guid: 480171153d0e72d46889754854821468, type: 2}
-  Description: Rage;Charge
+  Description: Charge; Rage
   CardImage: {fileID: 21300000, guid: dfd49497eb4e9904d8faa777d8e63d3f, type: 3}
   ManaCost: 8
   Sound: {fileID: 8300000, guid: 4b4055b8234a67040b52b44d7e4c3d42, type: 3}

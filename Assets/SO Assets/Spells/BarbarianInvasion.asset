@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BarbarianInvasion
   m_EditorClassIdentifier: 
   characterAsset: {fileID: 0}
-  Description: deal 2 damage to a creature
+  Description: Deal 2 damage to a creature
   CardImage: {fileID: 21300000, guid: 253f850fd682c7c44a005a030ec09abd, type: 3}
   ManaCost: 1
   Sound: {fileID: 0}

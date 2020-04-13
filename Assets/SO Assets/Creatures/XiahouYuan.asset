@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: XiahouYuan
   m_EditorClassIdentifier: 
   characterAsset: {fileID: 11400000, guid: 19c569ae010d09b4c8717cfcb8988269, type: 2}
-  Description: Charge;Rage
+  Description: Charge; Rage
   CardImage: {fileID: 21300000, guid: 727f7741504a39c4fb08da4b7b5291d3, type: 3}
   ManaCost: 5
   Sound: {fileID: 8300000, guid: b712cbeee2237ea4e8310e7b1fc3224e, type: 3}

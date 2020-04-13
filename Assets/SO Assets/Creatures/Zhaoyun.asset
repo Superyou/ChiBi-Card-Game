@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Zhaoyun
   m_EditorClassIdentifier: 
   characterAsset: {fileID: 11400000, guid: 480171153d0e72d46889754854821468, type: 2}
-  Description: At Every Turn Start, Dealing 3 Damage to Enemy Hero
+  Description: At Turn Start, Deal 3 Damage to Enemy Hero
   CardImage: {fileID: 21300000, guid: c421b05c850655444a2fe3862ccfc601, type: 3}
   ManaCost: 7
   Sound: {fileID: 8300000, guid: d0c397f40a443954c957e52bc58ed985, type: 3}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Huanggai
   m_EditorClassIdentifier: 
   characterAsset: {fileID: 11400000, guid: a43c2c80c406d9d48b9ef5ccf3b506bd, type: 2}
-  Description: Rage:AttackDealingDoubleDmg
+  Description: Rage
   CardImage: {fileID: 21300000, guid: f3bb8e1d29275b646a29222f542bec2f, type: 3}
   ManaCost: 5
   Sound: {fileID: 8300000, guid: 3616dd43d65a27b42af832eb9b70b835, type: 3}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Liaohua
   m_EditorClassIdentifier: 
   characterAsset: {fileID: 11400000, guid: 480171153d0e72d46889754854821468, type: 2}
-  Description: 'Charge; '
+  Description: Charge
   CardImage: {fileID: 21300000, guid: d30b57e6b963c8046ac6702c58e48299, type: 3}
   ManaCost: 2
   Sound: {fileID: 8300000, guid: 8536eaceedc655b47b89d34ea4b98bb6, type: 3}
@@ -21,6 +21,8 @@ MonoBehaviour:
   Attack: 3
   AttacksForOneTurn: 1
   Charge: 1
+  Fury: 0
+  LifeSteal: 0
   CreatureScriptName: 
   specialCreatureAmount: 0
   SpellScriptName: 

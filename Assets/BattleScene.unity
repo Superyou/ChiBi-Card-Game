@@ -1420,6 +1420,11 @@ PrefabInstance:
       propertyPath: owner
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7364557109276601383, guid: b45a980a3363a614291b03289073fe52,
+        type: 3}
+      propertyPath: UsePowerOpenly
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b45a980a3363a614291b03289073fe52, type: 3}
 --- !u!4 &264563671 stripped
@@ -1518,6 +1523,7 @@ MonoBehaviour:
   deck: {fileID: 2069269786}
   hand: {fileID: 85300765}
   table: {fileID: 467684676}
+  MaxHealth: 0
 --- !u!114 &271381870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1690,6 +1696,7 @@ MonoBehaviour:
   deck: {fileID: 1179533829}
   hand: {fileID: 1866637729}
   table: {fileID: 155136115}
+  MaxHealth: 0
 --- !u!114 &405968564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2050,6 +2057,11 @@ PrefabInstance:
     - target: {fileID: 4000010283960674, guid: b45a980a3363a614291b03289073fe52, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7364557109276601383, guid: b45a980a3363a614291b03289073fe52,
+        type: 3}
+      propertyPath: UsePowerOpenly
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b45a980a3363a614291b03289073fe52, type: 3}

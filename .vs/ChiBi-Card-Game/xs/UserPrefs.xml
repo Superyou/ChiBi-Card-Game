@@ -1,32 +1,15 @@
 ﻿<Properties StartupConfiguration="{2866B501-FD3E-D9D6-F1C8-D1622A68BA56}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Menu/Menu.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Logic/SpellScripts/HeroPowerDrawCardTakeDamage.cs">
     <Files>
-      <File FileName="Assets/Scripts/Logic/CardLogic.cs" Line="59" Column="47" />
-      <File FileName="Assets/Scripts/Logic/Player.cs" />
-      <File FileName="Assets/Scripts/Logic/Deck.cs" />
-      <File FileName="Assets/Scripts/Commands/DrawACardCommand.cs" />
-      <File FileName="Assets/Scripts/Visual/HandVisual.cs" />
-      <File FileName="Assets/Scripts/Logic/CreatureScripts/CreatureEffect.cs" />
-      <File FileName="Assets/Scripts/Logic/CreatureScripts/DamageEnermy.cs" />
-      <File FileName="Assets/Scripts/Logic/CreatureScripts/DamageWhenDied.cs" />
-      <File FileName="Assets/Scripts/Visual/GlobalSettings.cs" />
-      <File FileName="Assets/Scripts/Visual/OneCardManager.cs" />
-      <File FileName="Assets/Scripts/SO Asset Scripts/CardAsset/CardAsset.cs" />
-      <File FileName="Assets/Scripts/Visual/HoverPreview.cs" />
-      <File FileName="Assets/Scripts/Commands/CreatureAttackCommand.cs" />
-      <File FileName="Assets/Scripts/Logic/CreatureLogic.cs" />
-      <File FileName="Assets/Scripts/Commands/EnhanceCreatureCommand.cs" />
-      <File FileName="Assets/Scripts/Visual/OneCreatureManager.cs" />
-      <File FileName="Assets/Scripts/Commands/DealDamageCommand.cs" />
-      <File FileName="Assets/Scripts/Logic/Interfaces.cs" />
-      <File FileName="Assets/Scripts/Dragging/DragCreatureAttack.cs" />
-      <File FileName="Assets/Scripts/Visual/CreatureAttackVisual.cs" />
-      <File FileName="Assets/Scripts/Visual/PlayerPortraitVisual.cs" />
-      <File FileName="Assets/Scripts/Logic/SpellScripts/DealDamageToTarget.cs" />
-      <File FileName="Assets/Scripts/Logic/CreatureScripts/EnhanceCreatures.cs" />
-      <File FileName="Assets/Scripts/SceneReloader.cs" Line="18" Column="35" />
-      <File FileName="Assets/Scripts/Menu/Menu.cs" Line="12" Column="35" />
-      <File FileName="Assets/Scripts/Logic/TurnManager.cs" Line="91" Column="19" />
+      <File FileName="Assets/Scripts/Logic/CreatureScripts/DamageWhenDied.cs" Line="13" Column="51" />
+      <File FileName="Assets/Scripts/Logic/CreatureScripts/DrawExtraCard.cs" Line="12" Column="53" />
+      <File FileName="Assets/Scripts/Logic/CreatureScripts/HealWhenDied.cs" Line="15" Column="6" />
+      <File FileName="Assets/Scripts/Commands/HealCommand.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Logic/CreatureLogic.cs" Line="204" Column="14" />
+      <File FileName="Assets/Scripts/Visual/HeroPowerButton.cs" Line="57" Column="32" />
+      <File FileName="Assets/Scripts/Logic/Player.cs" Line="338" Column="39" />
+      <File FileName="Assets/Scripts/Logic/SpellScripts/HeroPower2Face.cs" Line="14" Column="1" />
+      <File FileName="Assets/Scripts/Logic/SpellScripts/HeroPowerDrawCardTakeDamage.cs" Line="8" Column="45" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -38,11 +21,11 @@
                 <Node name="Dragging" expanded="True" />
                 <Node name="Logic" expanded="True">
                   <Node name="CreatureScripts" expanded="True" />
-                  <Node name="SpellScripts" expanded="True" />
+                  <Node name="SpellScripts" expanded="True">
+                    <Node name="HeroPowerDrawCardTakeDamage.cs" selected="True" />
+                  </Node>
                 </Node>
-                <Node name="Menu" expanded="True">
-                  <Node name="Menu.cs" selected="True" />
-                </Node>
+                <Node name="Menu" expanded="True" />
                 <Node name="SO Asset Scripts" expanded="True">
                   <Node name="CardAsset" expanded="True" />
                 </Node>
@@ -56,7 +39,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a6d71d3e-817e-4193-bff8-9bf0b7cff719" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="087bd956-6bfe-4afe-84bb-38932e5a75e6" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

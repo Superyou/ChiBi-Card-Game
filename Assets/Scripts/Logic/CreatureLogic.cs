@@ -164,9 +164,13 @@ public class CreatureLogic: ICharacter
         {
             targetHealthAfter = target.Health - 1-Attack;
             attackerHealthAfter = Health - target.Attack;
-  	     if(isLifeSteal){
-        	attackerHealthAfter+=Attack;
-        }
+  	        if(isLifeSteal){
+        	    attackerHealthAfter+=Attack;
+                if (attackerHealthAfter > target.MaxHealth)
+                {
+                    attackerHealthAfter = target.MaxHealth;
+                }
+            }
             Debug.Log("After attack: target.Health " + targetHealthAfter.ToString());
             Debug.Log("After attack: this.Health  " + attackerHealthAfter.ToString());
             new CreatureAttackCommand(target.UniqueCreatureID, UniqueCreatureID, target.Attack, 1+Attack, attackerHealthAfter, targetHealthAfter).AddToQueue();
@@ -175,20 +179,29 @@ public class CreatureLogic: ICharacter
         {
             targetHealthAfter = target.Health - Attack;
             attackerHealthAfter = Health - 1 -target.Attack;
-             if(isLifeSteal){
-        	attackerHealthAfter+=Attack;
-        }
+            if(isLifeSteal){
+        	    attackerHealthAfter+=Attack;
+                if (attackerHealthAfter > target.MaxHealth)
+                {
+                    attackerHealthAfter = target.MaxHealth;
+                }
+            }
             Debug.Log("After attack: target.Health " + targetHealthAfter.ToString());
             Debug.Log("After attack: this.Health  " + attackerHealthAfter.ToString());
             new CreatureAttackCommand(target.UniqueCreatureID, UniqueCreatureID, 1+target.Attack, Attack, attackerHealthAfter, targetHealthAfter).AddToQueue();
         }
         else
-                {         
+        {         
             targetHealthAfter = target.Health - Attack;
             attackerHealthAfter = Health - target.Attack;
-              	 if(isLifeSteal){
-        	attackerHealthAfter+=Attack;
-        }
+            if(isLifeSteal)
+            {
+        	    attackerHealthAfter+=Attack;
+                if (attackerHealthAfter > target.MaxHealth)
+                {
+                    attackerHealthAfter = target.MaxHealth;
+                }
+            }
             Debug.Log("After attack: target.Health " + targetHealthAfter.ToString());
             Debug.Log("After attack: this.Health  " + attackerHealthAfter.ToString());
             new CreatureAttackCommand(target.UniqueCreatureID, UniqueCreatureID, target.Attack, Attack, attackerHealthAfter, targetHealthAfter).AddToQueue();
